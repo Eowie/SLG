@@ -1,0 +1,2 @@
+NumSala IN (select NumSala from UC_Sala where NomeUC IN (select NomeUC from Docente_UC where NomeDocente like 'Joao Catalao'))
+
