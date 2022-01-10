@@ -1,0 +1,3 @@
+https://arcgis.fc.ul.pt/server/rest/services/SLG2021/57541_ND/NAServer/Route
+https://arcgis.fc.ul.pt/server/rest/services/SLG2021/57541_CAL/GeocodeServer
+https://arcg.is/aOfuO

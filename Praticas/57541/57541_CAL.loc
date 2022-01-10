@@ -1,0 +1,143 @@
+
+LocFileUseUTF8 = True
+Category = Address
+Description = Geocode addresses against multiple address locators.
+
+Version = 10.0
+UseRelativePaths = TRUE
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;  Properties Required by ArcGIS
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+CLSID = {29B85A89-D2CE-4aeb-BC3F-661A3D2C296E}
+UICLSID = {3D486637-6BCF-4A0C-83DB-A02D437FB8FC}
+Fields = SingleKey
+FieldAliases = Key
+
+FieldNames.0 = SingleKey
+
+FieldsRequired = FALSE
+FieldSizes = 100
+WriteXYCoordFields = TRUE
+WriteStandardizedAddressField = False
+WriteReferenceIDField = FALSE
+WritePercentAlongField = FALSE
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;  Composite Locator Properties
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+CL.Locator = ServicoPontos_
+CL.Locator = CaminhoPedonal
+CL.Locator = Estrada_AL
+CL.Locator = Ciclovia_AL
+CL.Locator = Estacionamento
+CL.Locator = Gabinete_AL
+CL.Locator = SalaAula_AL
+CL.Locator = ServPolig_AL
+CL.Locator = SalaComputador
+CL.Locator = Edificio_AL
+CL.Locator = Canteiros_AL
+CL.Locator = Caminho_AL
+
+CL.SR = ByDescr
+
+CL.SR.Descr = PROJCS["ETRS_1989_Portugal_TM06",GEOGCS["GCS_ETRS_1989",DATUM["D_ETRS_1989",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",0.0],PARAMETE
+CL.SR.Descr = R["False_Northing",0.0],PARAMETER["Central_Meridian",-8.133108333333334],PARAMETER["Scale_Factor",1.0],PARAMETER["Latitude_Of_Origin",39.66825833333333],UNIT["Meter",1.0]],VERTCS["Cascais",VDATUM["Cascais"],PARAMETER["Vertical_Shift",0.0],PARAMETER["Dire
+CL.SR.Descr = ction",1.0],UNIT["Meter",1.0]]
+
+CL.SR.Domain = -5623200.000000,-14394800.000000,900714302274.098999,900705530674.098999
+
+CL.SkipBadLocators = FALSE
+
+CL.CaminhoPedonal.Enabled = TRUE
+CL.CaminhoPedonal.Input = SingleKey
+CL.CaminhoPedonal.LocWks = Type=Database;Wks=(ProgID = esriDataSourcesFile.ShapefileWorkspaceFactory.1; Path = .)
+CL.CaminhoPedonal.Name = CaminhoPedonal_AL
+CL.CaminhoPedonal.Select = 
+
+CL.Caminho_AL.Enabled = TRUE
+CL.Caminho_AL.Input = SingleKey
+CL.Caminho_AL.LocWks = Type=Database;Wks=(ProgID = esriDataSourcesFile.ShapefileWorkspaceFactory.1; Path = .)
+CL.Caminho_AL.Name = Caminho_AL
+CL.Caminho_AL.Select = 
+
+CL.Canteiros_AL.Enabled = TRUE
+CL.Canteiros_AL.Input = SingleKey
+CL.Canteiros_AL.LocWks = Type=Database;Wks=(ProgID = esriDataSourcesFile.ShapefileWorkspaceFactory.1; Path = .)
+CL.Canteiros_AL.Name = Canteiros_AL
+CL.Canteiros_AL.Select = 
+
+CL.Ciclovia_AL.Enabled = TRUE
+CL.Ciclovia_AL.Input = SingleKey
+CL.Ciclovia_AL.LocWks = Type=Database;Wks=(ProgID = esriDataSourcesFile.ShapefileWorkspaceFactory.1; Path = .)
+CL.Ciclovia_AL.Name = Ciclovia_AL
+CL.Ciclovia_AL.Select = 
+
+CL.Edificio_AL.Enabled = TRUE
+CL.Edificio_AL.Input = SingleKey
+CL.Edificio_AL.LocWks = Type=Database;Wks=(ProgID = esriDataSourcesFile.ShapefileWorkspaceFactory.1; Path = .)
+CL.Edificio_AL.Name = Edificio_AL
+CL.Edificio_AL.Select = 
+
+CL.Estacionamento.Enabled = TRUE
+CL.Estacionamento.Input = SingleKey
+CL.Estacionamento.LocWks = Type=Database;Wks=(ProgID = esriDataSourcesFile.ShapefileWorkspaceFactory.1; Path = .)
+CL.Estacionamento.Name = Estacionamento_AL
+CL.Estacionamento.Select = 
+
+CL.Estrada_AL.Enabled = TRUE
+CL.Estrada_AL.Input = SingleKey
+CL.Estrada_AL.LocWks = Type=Database;Wks=(ProgID = esriDataSourcesFile.ShapefileWorkspaceFactory.1; Path = .)
+CL.Estrada_AL.Name = Estrada_AL
+CL.Estrada_AL.Select = 
+
+CL.Gabinete_AL.Enabled = TRUE
+CL.Gabinete_AL.Input = SingleKey
+CL.Gabinete_AL.LocWks = Type=Database;Wks=(ProgID = esriDataSourcesFile.ShapefileWorkspaceFactory.1; Path = .)
+CL.Gabinete_AL.Name = Gabinete_AL
+CL.Gabinete_AL.Select = 
+
+CL.SalaAula_AL.Enabled = TRUE
+CL.SalaAula_AL.Input = SingleKey
+CL.SalaAula_AL.LocWks = Type=Database;Wks=(ProgID = esriDataSourcesFile.ShapefileWorkspaceFactory.1; Path = .)
+CL.SalaAula_AL.Name = SalaAula_AL
+CL.SalaAula_AL.Select = 
+
+CL.SalaComputador.Enabled = TRUE
+CL.SalaComputador.Input = SingleKey
+CL.SalaComputador.LocWks = Type=Database;Wks=(ProgID = esriDataSourcesFile.ShapefileWorkspaceFactory.1; Path = .)
+CL.SalaComputador.Name = SalaComputador_AL
+CL.SalaComputador.Select = 
+
+CL.ServPolig_AL.Enabled = TRUE
+CL.ServPolig_AL.Input = SingleKey
+CL.ServPolig_AL.LocWks = Type=Database;Wks=(ProgID = esriDataSourcesFile.ShapefileWorkspaceFactory.1; Path = .)
+CL.ServPolig_AL.Name = ServPolig_AL
+CL.ServPolig_AL.Select = 
+
+CL.ServicoPontos_.Enabled = TRUE
+CL.ServicoPontos_.Input = SingleKey
+CL.ServicoPontos_.LocWks = Type=Database;Wks=(ProgID = esriDataSourcesFile.ShapefileWorkspaceFactory.1; Path = .)
+CL.ServicoPontos_.Name = ServicoPontos_AL
+CL.ServicoPontos_.Select = 
+
+BuildVersion = $Revision: 17$
+BuildVersionDate = $Date: 6/27/18 1:56:58 PM PDT$
+LocatorWorkspaceString = ProgID = esriDataSourcesFile.ShapefileWorkspaceFactory; Path = C:\Users\Eow\Desktop\Mestrado\SLG\Praticas\57541\
+MaxSuggestCandidates = 10
+RebuildStartTime = 132826830363220000
+RebuildStartTimeAscii = 18:10:36
+RuntimeMemoryLimit = 1024000000
+SafeLocatorName = 57541_CAL
+SingleLineField = SingleLine
+SingleLineFieldAlias = Single Line Input
+
+SingleLineFieldNames = Address
+SingleLineFieldNames = SingleLine
+SingleLineFieldNames = FullAddress
+SingleLineFieldNames = Customer
+
+SingleLineFieldSize = 100
+UseMultithreading = True
